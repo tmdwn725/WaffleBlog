@@ -7,6 +7,6 @@
 </head>
 <body>
 	<div id="header"><jsp:include page="../common/Header.jsp" /></div>
-	집에가고싶어용 배도고픈데 추워요
+	집에가고싶어용 배도고픈데 추워용
 </body>
 </html>
