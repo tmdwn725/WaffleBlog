@@ -12,12 +12,15 @@ import semi.main.dao.MainDAO;
 public class MainDAO
 {
 	@Inject
-	SqlSession session;
+	private SqlSession session;
 
 	//private final String NAMESPACE = "mapper.main.MainMapper";
 	public MainVO selectTest()
 	{
-		return session.selectOne("mapper.main.selectTest");
+		/* return session.selectOne("mapper.main.selectTest"); */
+		MainVO mainVO = null;
+		
+		return mainVO;
 	}
 }
 

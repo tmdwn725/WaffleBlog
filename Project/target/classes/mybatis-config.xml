@@ -3,5 +3,6 @@
 <configuration>
 	<mappers>
 		<mapper resource="mapper/main/Main-SQL.xml"/>
+		<mapper resource="mapper/user/User-SQL.xml"/>
 	</mappers>
 </configuration>

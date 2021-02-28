@@ -15,7 +15,7 @@ public class InterceptorController {
     public ModelAndView interceptorTest() throws Exception{
          
         ModelAndView mv = new ModelAndView("");
-        log.debug("인터셉터 테스트입니다!");
+        log.debug("인터셉터");
          
         return mv;
     }
