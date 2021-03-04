@@ -13,8 +13,6 @@ public class ArticleVO {
 	String atc_des;
 	
 	String reg_date;
-	
-	String user_no;
 
 	public int getAtc_no() {
 		return atc_no;
@@ -63,14 +61,5 @@ public class ArticleVO {
 	public void setReg_date(String reg_date) {
 		this.reg_date = reg_date;
 	}
-
-	public String getUser_no() {
-		return user_no;
-	}
-
-	public void setUser_no(String user_no) {
-		this.user_no = user_no;
-	}
-	
 
 }

@@ -1,9 +1,12 @@
 package semi.article.service;
 
 import java.util.ArrayList;
+import java.util.List;
+
+import semi.article.bean.ArticleDivVO;
 
 public interface ArticleService {
 	
-	ArrayList<String> getArtDiv() throws Exception;
-
+	List<ArticleDivVO> getArtDiv() throws Exception;
+	
 }
