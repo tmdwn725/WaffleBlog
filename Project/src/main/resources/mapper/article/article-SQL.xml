@@ -2,11 +2,21 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="mapper.article">
 
-<select id="selectArtDiv" resultType="semi.article.bean.ArticleVO">
+<select id="selectAtcDiv" resultType="semi.article.bean.ArticleDivVO">
 	SELECT ATC_DIV_NO
 	, ATC_DIV_NM
 	, USR_NO
 	FROM TD_ATC_DIV
+</select>
+
+<select id="selectNewAtc" resultType="semi.article.bean.ArticleVO">
+	SELECT ATC_NO
+	, ATC_DIV_NO
+	, ATC_NAME
+	, ATC_DES
+	, REG_DATE
+	FROM TD_ATC
+	ORDER BY REG_DATE DESC
 </select>
 
 

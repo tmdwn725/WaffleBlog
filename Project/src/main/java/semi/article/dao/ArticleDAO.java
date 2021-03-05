@@ -8,6 +8,7 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.stereotype.Repository;
 
 import semi.article.bean.ArticleDivVO;
+import semi.article.bean.ArticleVO;
 
 @Repository
 public class ArticleDAO {
@@ -20,6 +21,12 @@ public class ArticleDAO {
 	public List<ArticleDivVO> selectAtcDiv() {
 		
 		return sqlSession.selectList(NAMESPACE + ".selectAtcDiv");
+		
+	}
+	
+	public List<ArticleVO> selectNewAtc() {
+		
+		return sqlSession.selectList(NAMESPACE + ".selectNewAtc");
 		
 	}
 	

@@ -13,6 +13,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import semi.article.bean.ArticleDivVO;
+import semi.article.bean.ArticleVO;
 import semi.article.service.ArticleService;
 
 @Controller
@@ -27,9 +28,11 @@ public class HeaderController
 	public String header(Model model) throws Exception
 	{
 		
-		List<ArticleDivVO> artDiv = articleService.getArtDiv();
+		List<ArticleDivVO> atcDiv = articleService.getArtDiv();
+		List<ArticleVO> newAtc = articleService.getNewArt();
 		
-		model.addAttribute(artDiv);
+		model.addAttribute(newAtc);
+		model.addAttribute(atcDiv);
 		return "/common/Header";
 	}
 }

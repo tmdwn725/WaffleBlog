@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import semi.article.bean.ArticleDivVO;
+import semi.article.bean.ArticleVO;
 import semi.article.dao.ArticleDAO;
 import semi.article.service.ArticleService;
 
@@ -19,6 +20,10 @@ public class ArticleServiceImpl implements ArticleService{
 	public List<ArticleDivVO> getArtDiv() throws Exception {				
 
 		return (ArrayList<ArticleDivVO>) articleDAO.selectAtcDiv();
+	}
+	
+	public List<ArticleVO> getNewArt() throws Exception{
+		return (ArrayList<ArticleVO>) articleDAO.selectNewAtc();
 	}
 
 }
